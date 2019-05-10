@@ -32,3 +32,6 @@ C:\Users\admin\Documents\Rafael Luge\siscar\UI\obj\Debug\UI.frmPrincipal.resourc
 C:\Users\admin\Documents\Rafael Luge\siscar\UI\obj\Debug\UI.frmSplash.resources
 C:\Users\admin\Documents\Rafael Luge\siscar\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Users\admin\Documents\Rafael Luge\siscar\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\bin\Debug\UI.exe.config
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.exe
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.pdb
