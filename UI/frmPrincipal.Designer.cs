@@ -69,9 +69,14 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.exibiBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.corDeFundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.papelDeParedeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -388,11 +393,43 @@
             this.toolStripButton6.ToolTipText = "Fecha Sistema";
             this.toolStripButton6.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exibiBarraToolStripMenuItem,
+            this.corDeFundoToolStripMenuItem1,
+            this.papelDeParedeToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 92);
+            // 
+            // exibiBarraToolStripMenuItem
+            // 
+            this.exibiBarraToolStripMenuItem.Checked = true;
+            this.exibiBarraToolStripMenuItem.CheckOnClick = true;
+            this.exibiBarraToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.exibiBarraToolStripMenuItem.Name = "exibiBarraToolStripMenuItem";
+            this.exibiBarraToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.exibiBarraToolStripMenuItem.Text = "Exibi Barra";
+            this.exibiBarraToolStripMenuItem.Click += new System.EventHandler(this.exibiBarraToolStripMenuItem_Click);
+            // 
+            // corDeFundoToolStripMenuItem1
+            // 
+            this.corDeFundoToolStripMenuItem1.Name = "corDeFundoToolStripMenuItem1";
+            this.corDeFundoToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.corDeFundoToolStripMenuItem1.Text = "Cor de Fundo";
+            // 
+            // papelDeParedeToolStripMenuItem1
+            // 
+            this.papelDeParedeToolStripMenuItem1.Name = "papelDeParedeToolStripMenuItem1";
+            this.papelDeParedeToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.papelDeParedeToolStripMenuItem1.Text = "Papel de Parede";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 332);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -411,6 +448,7 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,5 +495,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exibiBarraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem corDeFundoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem papelDeParedeToolStripMenuItem1;
     }
 }

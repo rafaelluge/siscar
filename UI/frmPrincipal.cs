@@ -62,5 +62,11 @@ namespace UI
         {
             Process.Start("iexplore.exe", "https://www.portaldetransito.rs.gov.br/dtw2/app/servico/vei/consulta-veiculo-form.xhtml");
         }
+
+        private void exibiBarraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(exibiBarraToolStripMenuItem.Checked)
+                toos
+        }
     }
 }
