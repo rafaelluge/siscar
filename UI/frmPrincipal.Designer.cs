@@ -206,6 +206,7 @@
             this.consultaDetranToolStripMenuItem.Name = "consultaDetranToolStripMenuItem";
             this.consultaDetranToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.consultaDetranToolStripMenuItem.Text = "Consulta &Detran";
+            this.consultaDetranToolStripMenuItem.Click += new System.EventHandler(this.consultaDetranToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -368,6 +369,7 @@
             this.toolStripButton5.Size = new System.Drawing.Size(89, 78);
             this.toolStripButton5.Text = "Cauculadora";
             this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton5.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
