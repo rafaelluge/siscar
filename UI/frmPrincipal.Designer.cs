@@ -173,13 +173,13 @@
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.estoqueToolStripMenuItem.Text = "&Estoque";
             // 
             // gráficosToolStripMenuItem
             // 
             this.gráficosToolStripMenuItem.Name = "gráficosToolStripMenuItem";
-            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.gráficosToolStripMenuItem.Text = "&Gráficos";
             // 
             // utilitárioToolStripMenuItem
@@ -199,6 +199,7 @@
             this.caulculadoraToolStripMenuItem.Name = "caulculadoraToolStripMenuItem";
             this.caulculadoraToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.caulculadoraToolStripMenuItem.Text = "&Caulculadora";
+            this.caulculadoraToolStripMenuItem.Click += new System.EventHandler(this.caulculadoraToolStripMenuItem_Click);
             // 
             // consultaDetranToolStripMenuItem
             // 

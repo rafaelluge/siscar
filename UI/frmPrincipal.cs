@@ -47,5 +47,10 @@ namespace UI
             toolStripStatusLabel3.Text = "Hora:  "+DateTime.Now.ToShortTimeString();
 
         }
+
+        private void caulculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("calc.exe");
+        }
     }
 }
