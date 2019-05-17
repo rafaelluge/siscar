@@ -53,10 +53,7 @@ namespace UI
             Process.Start("calc.exe");
         }
 
-        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void consultaDetranToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -65,8 +62,15 @@ namespace UI
 
         private void exibiBarraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(exibiBarraToolStripMenuItem.Checked)
-                toos
+            if (exibiBarraToolStripMenuItem.Checked)
+                toolStrip1.Show();
+            else
+                toolStrip1.Hide();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

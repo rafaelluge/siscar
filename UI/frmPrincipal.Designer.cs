@@ -114,7 +114,7 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientesToolStripMenuItem.Text = "&Clientes";
             // 
             // veículosToolStripMenuItem
@@ -123,7 +123,7 @@
             this.marcasToolStripMenuItem,
             this.modelosToolStripMenuItem});
             this.veículosToolStripMenuItem.Name = "veículosToolStripMenuItem";
-            this.veículosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.veículosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.veículosToolStripMenuItem.Text = "&Veículos";
             // 
             // marcasToolStripMenuItem
@@ -141,7 +141,7 @@
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuárioToolStripMenuItem.Text = "&Usuário";
             // 
             // movimentaçãoToolStripMenuItem
@@ -203,7 +203,7 @@
             // 
             this.caulculadoraToolStripMenuItem.Name = "caulculadoraToolStripMenuItem";
             this.caulculadoraToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.caulculadoraToolStripMenuItem.Text = "&Caulculadora";
+            this.caulculadoraToolStripMenuItem.Text = "&Calculadora";
             this.caulculadoraToolStripMenuItem.Click += new System.EventHandler(this.caulculadoraToolStripMenuItem_Click);
             // 
             // consultaDetranToolStripMenuItem
@@ -242,7 +242,7 @@
             // 
             this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
             this.sairToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem1.Text = "&Sair";
             this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
@@ -372,9 +372,9 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(89, 78);
-            this.toolStripButton5.Text = "Cauculadora";
+            this.toolStripButton5.Text = "Calculadora";
             this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton5.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
+            this.toolStripButton5.Click += new System.EventHandler(this.caulculadoraToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
@@ -400,7 +400,7 @@
             this.corDeFundoToolStripMenuItem1,
             this.papelDeParedeToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 70);
             // 
             // exibiBarraToolStripMenuItem
             // 
@@ -441,6 +441,7 @@
             this.Text = "SisCar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.Shown += new System.EventHandler(this.frmPrincipal_Shown);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
