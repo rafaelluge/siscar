@@ -73,6 +73,8 @@
             this.exibiBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corDeFundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.papelDeParedeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -223,12 +225,14 @@
             this.corDeFundoToolStripMenuItem.Name = "corDeFundoToolStripMenuItem";
             this.corDeFundoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.corDeFundoToolStripMenuItem.Text = "Cor de &Fundo";
+            this.corDeFundoToolStripMenuItem.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
             // 
             // papelDeParedeToolStripMenuItem
             // 
             this.papelDeParedeToolStripMenuItem.Name = "papelDeParedeToolStripMenuItem";
             this.papelDeParedeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.papelDeParedeToolStripMenuItem.Text = "&Papel de Parede";
+            this.papelDeParedeToolStripMenuItem.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -400,7 +404,7 @@
             this.corDeFundoToolStripMenuItem1,
             this.papelDeParedeToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 92);
             // 
             // exibiBarraToolStripMenuItem
             // 
@@ -417,17 +421,25 @@
             this.corDeFundoToolStripMenuItem1.Name = "corDeFundoToolStripMenuItem1";
             this.corDeFundoToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.corDeFundoToolStripMenuItem1.Text = "Cor de Fundo";
+            this.corDeFundoToolStripMenuItem1.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
             // 
             // papelDeParedeToolStripMenuItem1
             // 
             this.papelDeParedeToolStripMenuItem1.Name = "papelDeParedeToolStripMenuItem1";
             this.papelDeParedeToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.papelDeParedeToolStripMenuItem1.Text = "Papel de Parede";
+            this.papelDeParedeToolStripMenuItem1.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 332);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toolStrip1);
@@ -500,5 +512,7 @@
         private System.Windows.Forms.ToolStripMenuItem exibiBarraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem corDeFundoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem papelDeParedeToolStripMenuItem1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
