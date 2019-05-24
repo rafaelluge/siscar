@@ -20,7 +20,10 @@ namespace UI
 
         private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Deseja Finalizar o SisCar?", "SisCar",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            
+                Application.Exit();
         }
 
         public string usuario;
