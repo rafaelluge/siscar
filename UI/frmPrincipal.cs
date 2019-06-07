@@ -107,10 +107,10 @@ namespace UI
             openFileDialog1.Filter = "Arquivos de Imagen | (*.bmp; *.jpg; *.gif) | Todos os arquivos |*.*";
             openFileDialog1.Multiselect = false;
 
-            
+
             if (openFileDialog1.FileName != "")
                 this.BackgroundImage = Image.FromFile(openFileDialog1.FileName);
-
+                
         }
     }
 }

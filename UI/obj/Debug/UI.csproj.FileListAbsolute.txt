@@ -49,3 +49,4 @@ C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.frmPrincipal.
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.frmSplash.resources
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.frmClientes.resources
