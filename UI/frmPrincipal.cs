@@ -101,16 +101,22 @@ namespace UI
 
         private void papelDeParedeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            
             openFileDialog1.Title = "Seleciona a figura para o fundo";
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "Arquivos de Imagen | (*.bmp; *.jpg; *.gif) | Todos os arquivos |*.*";
             openFileDialog1.Multiselect = false;
-
+            openFileDialog1.ShowDialog();
 
             if (openFileDialog1.FileName != "")
                 this.BackgroundImage = Image.FromFile(openFileDialog1.FileName);
                 
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes frmClientes1 = new frmClientes();
+            frmClientes1.ShowDialog();
         }
     }
 }

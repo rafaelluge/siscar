@@ -118,6 +118,7 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientesToolStripMenuItem.Text = "&Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // veículosToolStripMenuItem
             // 
@@ -180,13 +181,13 @@
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.estoqueToolStripMenuItem.Text = "&Estoque";
             // 
             // gráficosToolStripMenuItem
             // 
             this.gráficosToolStripMenuItem.Name = "gráficosToolStripMenuItem";
-            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.gráficosToolStripMenuItem.Text = "&Gráficos";
             // 
             // utilitárioToolStripMenuItem
@@ -246,7 +247,7 @@
             // 
             this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
             this.sairToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.sairToolStripMenuItem1.Text = "&Sair";
             this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
@@ -404,7 +405,7 @@
             this.corDeFundoToolStripMenuItem1,
             this.papelDeParedeToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 70);
             // 
             // exibiBarraToolStripMenuItem
             // 

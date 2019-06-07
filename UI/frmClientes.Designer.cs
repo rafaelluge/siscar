@@ -53,6 +53,7 @@
             this.txtCIDADE = new System.Windows.Forms.TextBox();
             this.txtFONE1 = new System.Windows.Forms.MaskedTextBox();
             this.txtFONE2 = new System.Windows.Forms.MaskedTextBox();
+            this.cbESTADO = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cbESTADO);
             this.tabPage1.Controls.Add(this.txtFONE2);
             this.tabPage1.Controls.Add(this.txtFONE1);
             this.tabPage1.Controls.Add(this.txtCIDADE);
@@ -303,6 +305,40 @@
             this.txtFONE2.Size = new System.Drawing.Size(100, 20);
             this.txtFONE2.TabIndex = 12;
             // 
+            // cbESTADO
+            // 
+            this.cbESTADO.FormattingEnabled = true;
+            this.cbESTADO.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "MT",
+            "PA",
+            "PB",
+            "PE",
+            "PR",
+            "RN",
+            "RO",
+            "RR",
+            "RS",
+            "SC",
+            "SE",
+            "SP",
+            "TO"});
+            this.cbESTADO.Location = new System.Drawing.Point(540, 195);
+            this.cbESTADO.Name = "cbESTADO";
+            this.cbESTADO.Size = new System.Drawing.Size(80, 21);
+            this.cbESTADO.TabIndex = 10;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,5 +384,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ComboBox cbESTADO;
     }
 }
