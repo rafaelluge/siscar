@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void btFECHAR_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
