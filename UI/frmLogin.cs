@@ -22,8 +22,13 @@ namespace UI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            try
-            {
+            Application.Exit();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+             try
+             {    
                 Usuario usuario = new Usuario();
                 usuario.Login = txtUsuario.Text;
                 usuario.Senha = txtSenha.Text;
@@ -51,18 +56,10 @@ namespace UI
 
             }
 
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            frmPrincipal frmprincipal1 = new frmPrincipal();
-            frmprincipal1.usuario = txtUsuario.Text;
-            frmprincipal1.Show();
-            this.Dispose();
         }
     }
 }
