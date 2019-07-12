@@ -79,6 +79,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(278, 30);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtSenha
             // 
@@ -86,9 +87,10 @@
             this.txtSenha.Location = new System.Drawing.Point(236, 170);
             this.txtSenha.MaxLength = 8;
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.PasswordChar = 's';
             this.txtSenha.Size = new System.Drawing.Size(278, 30);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // btnOk
             // 

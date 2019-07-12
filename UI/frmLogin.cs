@@ -31,11 +31,11 @@ namespace UI
              {    
                 Usuario usuario = new Usuario();
                 usuario.Login = txtUsuario.Text;
-                usuario.Senha = txtSenha.Text;
+                usuario.Senha = txtSenha.Text ;
 
-                LoginBLL usuariobll = new LoginBLL();
+                LoginBLL usuarioBll = new LoginBLL();
 
-                if (usuariobll.verificarLogin(usuario))
+                if (usuarioBll.verificarLogin(usuario))
                 {
                     Login.User = usuario.Login;
                     frmPrincipal frmPrincipal = new frmPrincipal();
@@ -46,7 +46,7 @@ namespace UI
 
                 else
                 {
-                    MessageBox.Show("usuário ou senha Incorreto! Tente novamente!", "Autentificaçao",
+                    MessageBox.Show("Usuário ou senha Incorreto! Tente novamente!", "Autentificaçao",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
                     txtUsuario.Text = "";
@@ -60,6 +60,16 @@ namespace UI
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

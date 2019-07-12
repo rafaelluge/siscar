@@ -3,3 +3,8 @@ C:\Users\admin\Documents\RafaelLuge\Models\Models\bin\Debug\Models.pdb
 C:\Users\admin\Documents\RafaelLuge\Models\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\RafaelLuge\Models\Models\obj\Debug\Models.dll
 C:\Users\admin\Documents\RafaelLuge\Models\Models\obj\Debug\Models.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\Models\bin\Debug\Models.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\Models\bin\Debug\Models.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\Models\obj\Debug\Models.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\Models\obj\Debug\Models.pdb

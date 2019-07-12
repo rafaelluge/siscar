@@ -50,3 +50,5 @@ C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.frmSplash.res
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.csproj.GenerateResource.Cache
 C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\obj\Debug\UI.frmClientes.resources
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\bin\Debug\Npgsql.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\UI\bin\Debug\Mono.Security.dll

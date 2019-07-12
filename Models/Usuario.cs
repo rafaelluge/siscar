@@ -13,7 +13,6 @@ namespace Models
 
         public string Login 
         
-            public string Login
         {
             get { return login; }
             set { login = value; }

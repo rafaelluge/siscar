@@ -14,12 +14,14 @@ namespace DAL
         public bool verificarLogin(Usuario usuario) 
         {
             string validaUsuario = (String.Format(
-                "SELECT NOME" +
-                "FROM USUARIO" +
-                "WHERE LOGIN = '{0}' " +
-                "AND SENHA = '{1}'",
-                usuario.Login, usuario.Senha));
-
+                "SELECT nome " +
+                "FROM usuarios " + 
+                "WHERE login = '{0}' "+
+                "AND senha = '{1}' "+
+                "AND SN_ATIVO = 'S'",
+                usuario.Login,
+                usuario.Senha));
+            
             NpgsqlDataAdapter da = new NpgsqlDataAdapter
             (new NpgsqlCommand(validaUsuario, ConnectionFactory.connect()));
             DataTable dt = new DataTable();

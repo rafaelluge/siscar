@@ -7,3 +7,14 @@ C:\Users\admin\Documents\RafaelLuge\Models\BLL\bin\Debug\Models.pdb
 C:\Users\admin\Documents\RafaelLuge\Models\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\RafaelLuge\Models\BLL\obj\Debug\BLL.dll
 C:\Users\admin\Documents\RafaelLuge\Models\BLL\obj\Debug\BLL.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\BLL.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\BLL.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\DAL.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\Models.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\Npgsql.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\Mono.Security.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\DAL.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\bin\Debug\Models.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\obj\Debug\BLL.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\BLL\obj\Debug\BLL.pdb
