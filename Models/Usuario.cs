@@ -11,16 +11,14 @@ namespace Models
         private string login;
         private string senha;
 
-        public static class Login 
+        public string Login 
+        
+            public string Login
         {
-            private static string user = null;
-
-            public static string User
-            {
-                get { return user; }
-                set { user = value; }
-            }
+            get { return login; }
+            set { login = value; }
         }
+        
 
         public string Senha 
         {
