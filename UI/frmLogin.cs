@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Models;
+using DAL;
+using BLL;
 
 namespace UI
 {
@@ -19,7 +22,39 @@ namespace UI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            try
+            {
+                Usuario usuario = new Usuario();
+                usuario.Login = txtUsuario.Text;
+                usuario.Senha = txtSenha.Text;
+
+                LoginBLL usuariobll = new LoginBLL();
+
+                if (usuariobll.verificarLogin(usuario))
+                {
+                    Login.User = usuario.Login;
+                    frmPrincipal frmPrincipal = new frmPrincipal();
+                    frmPrincipal.usuario = usuario.Login;
+                    frmPrincipal.Show();
+                    this.Dispose(false);
+                }
+
+                else
+                {
+                    MessageBox.Show("usuário ou senha Incorreto! Tente novamente!", "Autentificaçao",
+                    MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                    txtUsuario.Text = "";
+                    txtSenha.Text = "";
+                    txtUsuario.Focus();
+                }
+
+            }
+
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnOk_Click(object sender, EventArgs e)
