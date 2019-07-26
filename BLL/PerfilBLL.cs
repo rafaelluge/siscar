@@ -8,7 +8,36 @@ using Models;
 
 namespace BLL
 {
-    class PerfilBLL
+    public class PerfilBLL
     {
+        public void SalvarCor(Perfil perfil) 
+        {
+            perfil.Login = Login.User;
+            PerfilDAL perfildall = new PerfilDAL();
+
+            perfildall.salvarCor(perfil);
+        }
+
+        public void SalvarImagem(Perfil perfil)
+        {
+            perfil.Login = Login>User;
+            PerfilDAL perfildall = new PerfilDAL();
+
+            perfildall.SalvarImagem(perfil);
+        }
+
+        public String VerificaCoreFundo(Perfil perfil) 
+        {
+            PerfilDAL perfildal = new PerfilDAL();
+            perfil.Login = Login.User;
+            return perfilDal.VerificarCoreFundo(perfil);
+        }
+
+        public String RetornarCoreFundo(Perfil perfil) 
+        {
+            PerfilDAL perfilDal = new PerfilDAL();
+            perfil.Login = Login.User;
+            return perfilDal.RetornarCoreFundo(perfil);
+        }
     }
 }
