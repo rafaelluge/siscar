@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Models;
+using BLL;
+
 
 namespace UI
 {
@@ -44,7 +47,19 @@ namespace UI
 
         private void frmPrincipal_Shown(object sender, EventArgs e)
         {
+            PerfilBLL perfilbll = new PerfilBLL();
+            Perfil perfil = new Perfil(); 
+
             toolStripStatusLabel1.Text = "Bem-Vindo " + usuario + "!";
+
+            if (perfilbll.VerificarCoreFundo(perfil).Equals("C"))
+            
+                this.BackColor = ColorTranslator.FromHtml(perfilbll.RetornarCoreFundo(perfil));
+            
+            else if (perfilbll.VerificarCoreFundo(perfil).Equals("I")) 
+            
+                this.BackgroundImage = Image.FromFile(perfilbll.RetornarCoreFundo(perfil));
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -92,9 +107,15 @@ namespace UI
 
             if ((dlg1 == DialogResult.Yes) || (dlg1 == DialogResult.None))
             {
-                colorDialog1.ShowDialog();
+                Perfil perfil = new Perfil();
+                PerfilBLL perfilbll = new PerfilBLL();
+
+                //colorDialog1.ShowDialog();
                 this.BackColor = colorDialog1.Color;
+                perfil.Cor = ColorTranslator.ToHtml(this.BackColor);
+                perfilbll.SalvarCor(perfil);
                 this.BackgroundImage = null;
+                colorDialog1.ShowDialog();
             };
             
         }
@@ -109,8 +130,15 @@ namespace UI
             openFileDialog1.ShowDialog();
 
             if (openFileDialog1.FileName != "")
+            {
                 this.BackgroundImage = Image.FromFile(openFileDialog1.FileName);
-                
+
+                Perfil perfil = new Perfil();
+                PerfilBLL perfilbll = new PerfilBLL();
+
+                perfil.Imagem = openFileDialog1.FileName;
+                perfilbll.SalvarImagem(perfil);
+            }   
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)

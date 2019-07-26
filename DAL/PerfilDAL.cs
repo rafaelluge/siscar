@@ -15,7 +15,8 @@ namespace DAL
         {
             try
             {
-                String salvarI = (String.Format("UPDATE USUARIOS_CONFIG" +
+                String salvarI = (String.Format(
+                    "UPDATE USUARIOS_CONFIG" +
                     "SET VALOR = '{0}', " +
                     "PLANO_DE_FUNDO = '{1}'" +
                     "WHERE LOGIN = '{2}'", perfil.Imagem, 'I', perfil.Login));

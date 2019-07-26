@@ -15,12 +15,12 @@ namespace BLL
             perfil.Login = Login.User;
             PerfilDAL perfildall = new PerfilDAL();
 
-            perfildall.salvarCor(perfil);
+            perfildall.SalvarCor(perfil);
         }
 
         public void SalvarImagem(Perfil perfil)
         {
-            perfil.Login = Login>User;
+            perfil.Login = Login.User;
             PerfilDAL perfildall = new PerfilDAL();
 
             perfildall.SalvarImagem(perfil);
@@ -30,7 +30,7 @@ namespace BLL
         {
             PerfilDAL perfildal = new PerfilDAL();
             perfil.Login = Login.User;
-            return perfilDal.VerificarCoreFundo(perfil);
+            return perfildal.VerificarCoreFundo(perfil);
         }
 
         public String RetornarCoreFundo(Perfil perfil) 
