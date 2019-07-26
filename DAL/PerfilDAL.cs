@@ -90,5 +90,37 @@ namespace DAL
                 ConnectionFactory.connect().Close();
             }
         }
+
+        public string RetornarCoreFundo(Perfil perfil) 
+        {
+            try
+            {
+                string retorna = (String.Format("SELECT VALOR " + "FROM USUARIO_CONFIG " + "WHERE LOGIN = '{0}'", perfil.Login));
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter
+                (new NpgsqlCommand(retorna, ConnectionFactory.connect()));
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    return dt.Rows[0]["valor"].ToString();
+                }
+
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Falha ao retornar valor do campo!" + ex.Message);
+            }
+            finally 
+            {
+                ConnectionFactory.connect().Close();
+            }
+        }
     } 
 }
