@@ -93,7 +93,7 @@ namespace UI
         {
 
         }
-
+        
         private void corDeFundoToolStripMenuItem_Click(object sender, EventArgs e)
         {            
             DialogResult dlg1 = new DialogResult();
