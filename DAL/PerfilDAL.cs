@@ -57,5 +57,38 @@ namespace DAL
                 ConnectionFactory.connect().Close();
             }
         }
+
+        public string VerificarCoreFundo(Perfil perfil) 
+        {
+            try
+            {
+                string verifica = (String.Format("SELECT PLANO_DE_FUNDO " +
+                    "FROMUSUARIOS_CONFIG " +
+                    " WHERE LOGIN = '{0}'", perfil.Login));
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter
+                (new NpgsqlCommand(verifica, ConnectionFactory.connect()));
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    return dt.Rows[0]["plano_de_fundo"].ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Falha ao verificar campos na base de dado!" + ex.Message);
+            }
+
+            finally 
+            {
+                ConnectionFactory.connect().Close();
+            }
+        }
     } 
 }
