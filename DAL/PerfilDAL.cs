@@ -15,14 +15,14 @@ namespace DAL
         {
             try
             {
-                String salvarI = (String.Format(
+                String salvaI = (String.Format(
                     "UPDATE USUARIOS_CONFIG" +
                     "SET VALOR = '{0}', " +
                     "PLANO_DE_FUNDO = '{1}'" +
                     "WHERE LOGIN = '{2}'", perfil.Imagem, 'I', perfil.Login));
 
                 NpgsqlCommand comandoUpdate = new NpgsqlCommand
-                (salvarI, ConnectionFactory.connect());
+                (salvaI, ConnectionFactory.connect());
                 comandoUpdate.ExecuteNonQuery();
             }
             catch (Exception ex) 
@@ -40,13 +40,13 @@ namespace DAL
         {
             try
             {
-                String salvarC = (String.Format("UPDATE USUARIOS_CONFIG " +
+                String salvaC = (String.Format("UPDATE USUARIOS_CONFIG " +
                     "SET VALOR = '{0}', " +
                     "PLANO_DE_FUNDO = '{1}'" +
                     "WHERW LOGIN = '{2}'", perfil.Cor, 'C', perfil.Login));
 
                 NpgsqlCommand comandoUpadate = new NpgsqlCommand
-                (salvarC, ConnectionFactory.connect());
+                (salvaC, ConnectionFactory.connect());
                 comandoUpadate.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -63,7 +63,8 @@ namespace DAL
         {
             try
             {
-                string verifica = (String.Format("SELECT PLANO_DE_FUNDO " +
+                string verifica = (String.Format(
+                    "SELECT PLANO_DE_FUNDO " +
                     "FROMUSUARIOS_CONFIG " +
                     " WHERE LOGIN = '{0}'", perfil.Login));
 
