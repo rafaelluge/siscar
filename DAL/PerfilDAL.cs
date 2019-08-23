@@ -65,7 +65,7 @@ namespace DAL
             {
                 string verifica = (String.Format(
                     "SELECT PLANO_DE_FUNDO " +
-                    "FROMUSUARIOS_CONFIG " +
+                    "FROM USUARIOS_CONFIG " +
                     " WHERE LOGIN = '{0}'", perfil.Login));
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter
@@ -97,7 +97,10 @@ namespace DAL
         {
             try
             {
-                string retorna = (String.Format("SELECT VALOR " + "FROM USUARIO_CONFIG " + "WHERE LOGIN = '{0}'", perfil.Login));
+                string retorna = (String.Format(
+                    "SELECT VALOR " +
+                    "FROM USUARIO_CONFIG " +
+                    "WHERE LOGIN = '{0}'", perfil.Login));
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter
                 (new NpgsqlCommand(retorna, ConnectionFactory.connect()));

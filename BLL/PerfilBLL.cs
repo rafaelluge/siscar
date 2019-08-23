@@ -26,11 +26,11 @@ namespace BLL
             perfildall.SalvarImagem(perfil);
         }
 
-        public String VerificaCoreFundo(Perfil perfil) 
+        public String VerificarCoreFundo(Perfil perfil) 
         {
-            PerfilDAL perfildal = new PerfilDAL();
+            PerfilDAL perfilDal = new PerfilDAL();
             perfil.Login = Login.User;
-            return perfildal.VerificarCoreFundo(perfil);
+            return perfilDal.VerificarCoreFundo(perfil);
         }
 
         public String RetornarCoreFundo(Perfil perfil) 

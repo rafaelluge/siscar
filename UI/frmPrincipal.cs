@@ -110,12 +110,12 @@ namespace UI
                 Perfil perfil = new Perfil();
                 PerfilBLL perfilbll = new PerfilBLL();
 
-                //colorDialog1.ShowDialog();
+                colorDialog1.ShowDialog();
                 this.BackColor = colorDialog1.Color;
                 perfil.Cor = ColorTranslator.ToHtml(this.BackColor);
                 perfilbll.SalvarCor(perfil);
                 this.BackgroundImage = null;
-                colorDialog1.ShowDialog();
+                
             };
             
         }
