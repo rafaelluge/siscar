@@ -82,5 +82,11 @@ namespace Models
             get { return sexo; }
             set { sexo = value; }
         }
+
+        public string Resticao 
+        {
+            get { return restricao; }
+            set { restricao = value; }
+        }
     }
 }
