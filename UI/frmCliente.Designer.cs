@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class frmClientes
+    partial class frmCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -169,6 +169,7 @@
             this.btGRAVAR.Text = "&Gravar";
             this.btGRAVAR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btGRAVAR.UseVisualStyleBackColor = true;
+            this.btGRAVAR.Click += new System.EventHandler(this.btGRAVAR_Click);
             // 
             // ckRESTRICAO
             // 
@@ -456,7 +457,7 @@
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // frmClientes
+            // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -464,7 +465,7 @@
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmClientes";
+            this.Name = "frmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmClientes_KeyDown);

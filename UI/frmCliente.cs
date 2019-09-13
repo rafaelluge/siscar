@@ -13,9 +13,9 @@ using BLL;
 
 namespace UI
 {
-    public partial class frmClientes : Form
+    public partial class frmCliente : Form
     {
-        public frmClientes()
+        public frmCliente()
         {
             InitializeComponent();
         }
@@ -52,11 +52,16 @@ namespace UI
 
         private void frmClientes_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
+            /*if (e.KeyCode == Keys.Escape)
                 ZeraCampos();
             
             if (e.KeyCode == Keys.Escape)
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{TAB}");*/ 
+        }
+
+        private void btGRAVAR_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

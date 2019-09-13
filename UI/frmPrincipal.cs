@@ -143,7 +143,7 @@ namespace UI
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmClientes frmClientes1 = new frmClientes();
+            frmCliente frmClientes1 = new frmCliente();
             frmClientes1.ShowDialog();
         }
     }
