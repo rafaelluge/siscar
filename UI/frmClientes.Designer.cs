@@ -314,6 +314,7 @@
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
             this.txtCPF.TabIndex = 4;
+            this.txtCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtNOME
             // 
