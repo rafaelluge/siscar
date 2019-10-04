@@ -56,7 +56,7 @@ namespace DAL
             {
                 ConnectionFactory.connect().Close();
             }
-            
+        }
             public void InserirCliente(Cliente cliente)
             {
                 try
@@ -103,7 +103,7 @@ namespace DAL
                     cliente.Resticao));
 
                     NpgsqlCommand comandoInsert= new NpgsqlCommand
-                    (insereC, ConnectionFactory.connect())
+                    (insereC, ConnectionFactory.connect());
                     comandoInsert.ExecuteNonQuery();
 
 
@@ -178,5 +178,5 @@ namespace DAL
 
 
         }
-    }
+    
 }

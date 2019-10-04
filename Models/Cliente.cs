@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Clientes
+    public class Cliente
     {
         private string cod_clientes, nome, cpf, data_nasc, endereco,
             bairro, cep, cidade, estado, fone1, fone2, sexo, restricao;

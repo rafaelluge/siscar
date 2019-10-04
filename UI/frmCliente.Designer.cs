@@ -303,10 +303,12 @@
             // txtDATA_NASC
             // 
             this.txtDATA_NASC.Location = new System.Drawing.Point(540, 83);
-            this.txtDATA_NASC.Mask = "00/00/00";
+            this.txtDATA_NASC.Mask = "00/00/0000";
             this.txtDATA_NASC.Name = "txtDATA_NASC";
             this.txtDATA_NASC.Size = new System.Drawing.Size(100, 20);
             this.txtDATA_NASC.TabIndex = 5;
+            this.txtDATA_NASC.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
+            this.txtDATA_NASC.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtDATA_NASC_MaskInputRejected);
             // 
             // txtCPF
             // 
