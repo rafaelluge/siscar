@@ -5,3 +5,12 @@ C:\Users\admin\Documents\RafaelLuge\Models\DAL\bin\Debug\Models.pdb
 C:\Users\admin\Documents\RafaelLuge\Models\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\RafaelLuge\Models\DAL\obj\Debug\DAL.dll
 C:\Users\admin\Documents\RafaelLuge\Models\DAL\obj\Debug\DAL.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\DAL.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\DAL.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\Models.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\Mono.Security.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\Npgsql.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\bin\Debug\Models.pdb
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\obj\Debug\DAL.dll
+C:\Users\admin\Documents\ALUNOS\Rafael Luge\siscar\DAL\obj\Debug\DAL.pdb

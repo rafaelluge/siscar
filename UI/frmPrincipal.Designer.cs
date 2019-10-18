@@ -69,9 +69,16 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.exibiBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.corDeFundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.papelDeParedeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,8 +116,9 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientesToolStripMenuItem.Text = "&Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // veículosToolStripMenuItem
             // 
@@ -118,7 +126,7 @@
             this.marcasToolStripMenuItem,
             this.modelosToolStripMenuItem});
             this.veículosToolStripMenuItem.Name = "veículosToolStripMenuItem";
-            this.veículosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.veículosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.veículosToolStripMenuItem.Text = "&Veículos";
             // 
             // marcasToolStripMenuItem
@@ -136,7 +144,7 @@
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuárioToolStripMenuItem.Text = "&Usuário";
             // 
             // movimentaçãoToolStripMenuItem
@@ -198,13 +206,15 @@
             // 
             this.caulculadoraToolStripMenuItem.Name = "caulculadoraToolStripMenuItem";
             this.caulculadoraToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.caulculadoraToolStripMenuItem.Text = "&Caulculadora";
+            this.caulculadoraToolStripMenuItem.Text = "&Calculadora";
+            this.caulculadoraToolStripMenuItem.Click += new System.EventHandler(this.caulculadoraToolStripMenuItem_Click);
             // 
             // consultaDetranToolStripMenuItem
             // 
             this.consultaDetranToolStripMenuItem.Name = "consultaDetranToolStripMenuItem";
             this.consultaDetranToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.consultaDetranToolStripMenuItem.Text = "Consulta &Detran";
+            this.consultaDetranToolStripMenuItem.Click += new System.EventHandler(this.consultaDetranToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -216,12 +226,14 @@
             this.corDeFundoToolStripMenuItem.Name = "corDeFundoToolStripMenuItem";
             this.corDeFundoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.corDeFundoToolStripMenuItem.Text = "Cor de &Fundo";
+            this.corDeFundoToolStripMenuItem.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
             // 
             // papelDeParedeToolStripMenuItem
             // 
             this.papelDeParedeToolStripMenuItem.Name = "papelDeParedeToolStripMenuItem";
             this.papelDeParedeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.papelDeParedeToolStripMenuItem.Text = "&Papel de Parede";
+            this.papelDeParedeToolStripMenuItem.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -365,8 +377,9 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(89, 78);
-            this.toolStripButton5.Text = "Cauculadora";
+            this.toolStripButton5.Text = "Calculadora";
             this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton5.Click += new System.EventHandler(this.caulculadoraToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
@@ -385,11 +398,51 @@
             this.toolStripButton6.ToolTipText = "Fecha Sistema";
             this.toolStripButton6.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exibiBarraToolStripMenuItem,
+            this.corDeFundoToolStripMenuItem1,
+            this.papelDeParedeToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 70);
+            // 
+            // exibiBarraToolStripMenuItem
+            // 
+            this.exibiBarraToolStripMenuItem.Checked = true;
+            this.exibiBarraToolStripMenuItem.CheckOnClick = true;
+            this.exibiBarraToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.exibiBarraToolStripMenuItem.Name = "exibiBarraToolStripMenuItem";
+            this.exibiBarraToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.exibiBarraToolStripMenuItem.Text = "Exibi Barra";
+            this.exibiBarraToolStripMenuItem.Click += new System.EventHandler(this.exibiBarraToolStripMenuItem_Click);
+            // 
+            // corDeFundoToolStripMenuItem1
+            // 
+            this.corDeFundoToolStripMenuItem1.Name = "corDeFundoToolStripMenuItem1";
+            this.corDeFundoToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.corDeFundoToolStripMenuItem1.Text = "Cor de Fundo";
+            this.corDeFundoToolStripMenuItem1.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
+            // 
+            // papelDeParedeToolStripMenuItem1
+            // 
+            this.papelDeParedeToolStripMenuItem1.Name = "papelDeParedeToolStripMenuItem1";
+            this.papelDeParedeToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.papelDeParedeToolStripMenuItem1.Text = "Papel de Parede";
+            this.papelDeParedeToolStripMenuItem1.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 332);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -401,6 +454,7 @@
             this.Text = "SisCar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.Shown += new System.EventHandler(this.frmPrincipal_Shown);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
@@ -408,6 +462,7 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,5 +509,11 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exibiBarraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem corDeFundoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem papelDeParedeToolStripMenuItem1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
