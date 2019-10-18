@@ -79,8 +79,8 @@ namespace UI
             {
                 cliente.Cod_Cliente = txtCOD_CLIENTE.Text;
                 cliente.Nome = txtNOME.Text;
-                cliente.CPF = txtNOME.Text;
-                cliente.Data_Nasc = txtCPF.Text;
+                cliente.CPF = txtCPF.Text;
+                cliente.Data_Nasc = txtDATA_NASC.Text;
                 cliente.Endereco = txtENDERECO.Text;
                 cliente.Bairro = txtBAIRRO.Text;
                 cliente.CEP = txtCEP.Text;
